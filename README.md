@@ -2,7 +2,7 @@
 
 <img width="1410" height="880" alt="image" src="https://github.com/user-attachments/assets/620f9c36-23ed-4dfa-bc05-a2143a16d490" />
 
-This is a minimal agent built with **LangGraph** and **GPT-4o-mini** that fetches up-to-date API documentation from [Context Hub (chub)](https://github.com/anthropics/context-hub) before making the api calls to open ai — so it always works with current, accurate API knowledge instead of stale training data.
+This is a minimal agent built with **LangGraph** and **GPT-4o-mini** that fetches up-to-date API documentation from [Context Hub (chub)]([https://github.com/anthropics/context-hub](https://github.com/andrewyng/context-hub)) before making the api calls to open ai — so it always works with current, accurate API knowledge instead of stale training data.
 
 1. **`fetch_docs_node`** — checks the in-memory cache, then calls the `chub` CLI to fetch the latest docs for the requested API. Stores the result in LangGraph agent state.
 2. **`chatbot_node`** — passes the fetched docs as a system message alongside the user's prompt to GPT-4o-mini.
